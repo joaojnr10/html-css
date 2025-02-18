@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alinhamento vertical</title>
-    <style>
-        #container {
+    <title>Espaço</title>
+
+<style>
+
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #container {
             position: relative;
             height: 96vh;
             padding: 10px;
             background-color: purple;
-            background-image: url(imagens/target001.png);
+            background-image: url(imagens/espaco.jpg);
             background-size: 100% 100%;
         }
 
-        #conteudo {
+     #conteudo {
             position: absolute;
             height: 200px;
-            width: 400px;
-            background-color: yellow;
-            background-image: url(imagens/target001.png);
+            width: 400px;  
+            background-image: url(imagens/astronauta.png);
             background-size: 100% 100%;
 
             left: 50%;
             top: 50%;
             
-            transform: translate(-50%, -50%);    
-        }
-    </style>
+            transform: translate(-50%, -50%);
+     }
+        
+
+
+    
+
+    
+</style>
 </head>
 <body>
     <section id="container">
