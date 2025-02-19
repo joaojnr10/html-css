@@ -12,6 +12,7 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            border: 5px solid black;
         }
 
         tr.linha {
@@ -24,8 +25,12 @@
 
         }
 
-        td.dado{
-            
+        td.dado {
+            background-color: yellow;
+        }
+
+        td.d1 {
+            background-color: red;
         }
     </style>
 </head>
@@ -40,9 +45,9 @@
     -->
     <table>
         <tr> <!--primeira linha-->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
+            <td class="dado">A1</td>
+            <td class="d1">B1</td>
+            <td class="dado">C1</td>
         </tr>
 
         <tr class="linha"> <!--Segunda linha-->
@@ -52,9 +57,9 @@
         </tr>
 
         <tr><!--terceira linha-->
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
+            <td class="d1">A3</td>
+            <td class="dado">B3</td>
+            <td class="d1">C3</td>
         </tr>
 
         <tr class="linha"> <!--quarta linha-->
