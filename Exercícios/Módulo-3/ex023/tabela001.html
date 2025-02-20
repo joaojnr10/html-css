@@ -11,26 +11,28 @@
 
         table {
             width: 400px;
+            height: 400px;
             border-collapse: collapse;
-            border: 5px solid black;
         }
 
         tr.linha {
             background-color: gray;
         }
-
+        
         td {
             border: 1px solid black;
             padding: 8px;
+            text-align: center; /* Alinhamento Horizontal */
+            vertical-align: middle; /* Alinhamento Vertical*/
 
         }
 
-        td.dado {
-            background-color: yellow;
+        td.num-esq {
+            text-align: left;
         }
 
-        td.d1 {
-            background-color: red;
+        td.num-dir {
+            text-align: right;
         }
     </style>
 </head>
@@ -45,27 +47,27 @@
     -->
     <table>
         <tr> <!--primeira linha-->
-            <td class="dado">A1</td>
-            <td class="d1">B1</td>
-            <td class="dado">C1</td>
+            <td class="num-esq">A1</td>
+            <td>B1</td>
+            <td class="num-dir">C1</td>
         </tr>
 
         <tr class="linha"> <!--Segunda linha-->
-            <td>A2</td>
+            <td class="num-esq">A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="num-dir">C2</td>
         </tr>
 
         <tr><!--terceira linha-->
-            <td class="d1">A3</td>
-            <td class="dado">B3</td>
-            <td class="d1">C3</td>
+            <td class="num-esq">A3</td>
+            <td>B3</td>
+            <td class="num-dir">C3</td>
         </tr>
 
         <tr class="linha"> <!--quarta linha-->
-            <td>A4</td>
+            <td class="num-esq">A4</td>
             <td>B4</td>
-            <td>C4</td>
+            <td class="num-dir">C4</td>
         </tr>
     </table>
 </body>
